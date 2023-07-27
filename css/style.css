@@ -3,71 +3,62 @@
 
 /* Arreglos generales*/
 
-
-
 h1 {
-    
-    font-size: 40px;
+    margin-top: 13%;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
     color: rgb(251, 207, 171);
     font-weight: 800;
-    margin-top: 12%;
 }
-.img__logo {width: 300px;}
+.img__logo{width:350px;}
+@media screen and (max-width:992px) and (min-width:300px){
+    .img__logo{
+        width: 260px;
+        margin:20px 0px;
+    }
+    h1{
+        margin-top: 20%;
+        font-size: 35px;
+    }
+}
+
 .nav{
     position: fixed;
-    width: 100%;
-    background: rgba(248, 246, 246, 0.533);
+    z-index: 2;
+    background: rgba(248, 246, 246, 0.882);
     backdrop-filter: blur(10px);
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
 .ul__dropdown{
-    background: rgb(195, 193, 193);
+    background: rgb(216, 214, 214);
     border: 1px solid rgb(165, 164, 164);
     width: 30%;
 }
+a {color: #222;}
 
-a {
-    text-decoration: none;
-    color: #222;
-}
-h2 {
-    font-size: 28px;
-    text-align: center;
-    padding: 30px;
-}
+.footer{
+    background: rgb(141,63,251);
 
+    background: radial-gradient(circle, rgba(141,63,251,1) 0%, rgba(252,152,70,1) 100%);
+}
+.img__logo--footer{
+    width: 100px;
+    box-shadow:3px 3px 12px rgba(50, 50, 50, 0.542);
+}
 
 .contenedor-iconosFooter i {
     margin: 10px;
     font-size: 27px;
 }
-.contenedor-footer h6 {
-    font-size: 13px;
-}
-.contenedor-footer h5 {
-    font-size: 16px;
-    font-weight: 600;
-}
+
+
 .imagen-contenedora button{
-    background-color: #75f87af1;
+    background-color: #75f879f8;
     color: rgb(71, 67, 59);
-    border-radius:30px;
-    border:none;
-    width: 30%;
-    height: 10%;
-    text-transform: uppercase;  
-    font-size: 15px;  
-    
-    
+   height: 9vh;
 }
 .imagen-contenedora button:hover{
-    background-color: #dc75f8f1;
+    background-color: #dc75f8f8;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    
-    
 }
 
 .boton-acceder a {
@@ -79,41 +70,23 @@ h2 {
     color: rgb(71, 67, 59);
     border: 2px solid #DBDFEA;
     border-radius: 8px;
-    width: 100px;
+    
     height: 30px;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 15px;
+    
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 li {
     list-style: none;
 }
-p {
-    
-    background-color: transparent;
-    font-size: 17px;
-    margin: 0px 10px 20px 10px;
-}
 
-body{
-    background: rgba(20, 19, 19, 0.129);
-}
+
 
 
 /* Arreglos Index*/
 
-.subtitulo-pagina {
-    height: 50px;
-    padding: 10px 0px 0px 40px;
-    font-weight: 800;
-    font-size: 25px;
-    text-align: start;
-    background-color: #ACB1D6;
-    border-radius: 10px;
-    color: #FFF4F4;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-}
+
 
 .imagen-contenedora {
     border-bottom: solid 4px #eda756;
@@ -121,220 +94,14 @@ body{
     height: 90vh;
     background-image: url("../imagenes/fondo2.jpg");
     background-position:  center;
-    background-size: cover;*/
+    background-size: cover;
     text-align: left;
-    padding: 35px;
-    justify-content: space-between;
-    flex-direction: column;
-    display: flex;
-}
-
-.contenido-imagen {
-    display: inline-block;
-    
-}
-
-.subtitulo {
-    color: rgb(71, 67, 59);
-    font-weight: 600;
-    font-size:17px;
-    color: #eef1f8;
-    margin-top: 10%;
    
-}
-
-.contenedor-sucursales {
-    margin-top: 100px;
-    text-align: center;
-    height: 300px;
-
-}
-
-.contenido-sucursales {
-    display: inline-block;
-    height: 100px;
-    width: 370px;
-
-}
-
-.contenido-sucursalesUno {
-    margin-top: 30px;
-
-}
-
-.contenedor-quienesSomos{
-    text-align: center;
-    margin: auto;
-    width: 70% ;
-    background-image: url(../imagenes/opcion1.jpg);
-    border-radius: 50px;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
-}
-
-.contenido-quienesSomos  {
-    background: rgba(248, 246, 246, 0.355);
-    backdrop-filter: blur(60px);
-    padding: 20px;
-    border-radius: 50px;
-  
-}
-
-.contenedor-especial {
-    text-align: center;
-    font-size: 17px;
-}
-
-.fa-regular {
-    margin-left: 200px;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.contenido-especial {
-    margin: 80px 0px;
-    font-size: 18px;
-}
-
-.index-conoceMas {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.contenedor-promociones {
-    background-color: #ACB1D6;
-    height: 300px;
-    color: #FFF4F4;
-    font-size: 24px;
-    text-align: center;
-
-
-
-}
-
-.contenedor-promociones h2 {
-    font-size: 38px
-}
-
-.contenido-promociones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    margin: 30px 100px 0px 0px;
-
-}
-
-.contenido-promociones h5 {
-    font-size: 17px;
-}
-
-.contenido-promociones li {
-    font-weight: 600;
-    font-size: 28px;
-}
-
-.contenedor-preguntas {
-    margin: auto;
-    font-size: 16px;
-    width: 1000px;
-    height: auto;
-
-
-
-
-}
-
-.fa-angle-down,
-.fa-window-minimize {
-    color: #606C5D;
-    margin-left: 950px;
-
-
-}
-
-.pregunta {
-    border-bottom: 2px solid #FFEAD2;
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-
-
-
-}
-
-.pregunta-contestada {
-    text-decoration: none;
-    background-color: #FFEAD2;
-    margin: 5px;
-    padding: 5px;
-}
-
-.respuesta {
-    height: 250px;
-    width: 1000px;
-    display: inline;
-    font-size: 16px;
-
-
-
-}
-
-.contenedor-marca {
-    height: 240px;
-    width: 460px;
-    margin: 5% 33%;
-    padding: 20px;
-    background-color: #ACB1D6;
-    border-radius: 40px;
-    display: inline-block;
-    color: #FFF4F4;
-
-
-
-}
-
-.contenedor-marca h6 {
-    font-size: 14px;
-    margin: 10px 0px 10px 5px;
-}
-
-.contenedor-marca h5 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.contenedor-marca i {
-    font-size: 20px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.logo-marca {
-    height: 45px;
-    width: 90px;
-    margin-right: 15px;
 
 }
 
 
-
-.articulo img {
-    height: 200px;
-    width: 200px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.articulo {
- 
-    
-    height: 250px;
-    width: 250px;
-
-}
-
+.subtitulo{color: #ffffff;}
 
 
 

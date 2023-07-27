@@ -13,13 +13,12 @@
     <script src="https://kit.fontawesome.com/cf2dcc4586.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-
-        <nav class="navbar navbar-expand-lg nav ">
-            <div class="container-fluid col-sm-12">
-                <img class="img__logo ms-5 " src="imagenes/logo-removebg-preview.png" alt="logo de Domina Light">
-                <button class="navbar-toggler col-sm-1" type="button" data-bs-toggle="collapse"
+<body >
+    <header >
+        <nav class="navbar navbar-expand-lg nav w-100 ">
+            <div class="container-fluid d-flex nav__div--container">
+                <img class="img__logo ms-xl-5 ms-sm-5 ms-1" src="imagenes/logo-removebg-preview.png" alt="logo de Domina Light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +34,7 @@
                                     Contacto
                                 </button>
                                 <ul class="dropdown-menu ms-3 ul__dropdown fw-semibold">
-                                    <li><a class="dropdown-item nav-link fw-semibold  ps-3"  href="html/contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item nav-link fw-semibold ps-3"  href="html/contacto.html">Contacto</a></li>
                                     <li><a class="dropdown-item nav-link fw-semibold ps-3" href="html/cotizaciones.html">Cotizaciones</a>
                                     </li>
                                 </ul>
@@ -46,7 +45,7 @@
                         <li class="nav-item fw-semibold">
                             <a class="nav-link" href="html/estilos.html">Estilos</a>
                         </li>
-                        <li class="nav-item fw-semibold">
+                        <li class="nav-item fw-semibold ">
                             <a class="nav-link" href="#FAQ">FAQ</a>
                         </li>
                     </ul>
@@ -55,16 +54,16 @@
 
         </nav>
 
-        <div class="imagen-contenedora">
-            <h1 class="contenido-imagen col-xl-4">Estilos e inovaciones al alcance de tu mano</h1>
-            <h4 class="contenido-imagen subtitulo">¿Queres conocer nuestros valores? Ingresá en cotizaciones</h4>
-            <button><a href="html/cotizaciones.html">Cotizaciones</a></button>
+        <div class="imagen-contenedora container-fluid col-md-12 col-sm-12 d-grid text-start ">
+            <h1 class="contenido-imagen ms-xl-3 ms-lg-3 ms-sm-2 col-xl-4 col-sm-7 align-self-end fw-bold ">Estilos e inovaciones al alcance de tu mano</h1>
+            <h4 class="contenido-imagen subtitulo ms-xl-3ms-lg-3 ms-sm-2 fw-semibold fs-6 align-self-end">¿Queres conocer nuestros valores? Ingresá en cotizaciones</h4>
+            <button class="fw-semibold fs-6 text-uppercase border-0 rounded-pill col-sm-7 col-xl-4 col-lg-6 align-self-center "><a class="text-decoration-none" href="html/cotizaciones.html">Cotizaciones</a></button>
         </div>
 
     </header>
     <main>
 
-        <h2>Sucursales</h2>
+        <h2 class="text-center">Sucursales</h2>
         <div class="contenedor-sucursales">
             <h3 class="contenido-sucursales">Domina Light - Iluminación Decorativa</h3>
             <h3 class="contenido-sucursales">Bioluz - Materiales Eléctricos</h3>
@@ -72,7 +71,7 @@
         </div>
         <div class="contenedor-quienesSomos">
             <div class="contenido-quienesSomos">
-                <h2>¿Quienes Somos?</h2>
+                <h2 class="text-center">¿Quienes Somos?</h2>
                 <p>
                     Domina Light es una de las sucursales pertenecientes a Grupo Bioluz, destinada a la venta
                     especializada de Iluminacion Decorativa. El local comenzo su trayecto a principios del año 2019,
@@ -88,7 +87,7 @@
             </div>
         </div>
 
-        <h2>¿Sos electricista, constructor o arquitecto?</h2>
+        <h2 class="text-center">¿Sos electricista, constructor o arquitecto?</h2>
         <div class="contenedor-especial">
             <h4>Queremos que trabajes junto a nosotros</h4>
         </div>
@@ -102,7 +101,7 @@
             <h4>Conocé más</h4> <button class="boton-acceder"><a href="html/contacto.html">Acceder</a></button>
         </div>
         <div class="contenedor-promociones">
-            <h2>Promociones</h2>
+            <h2 class="text-center">Promociones</h2>
 
             <ul class="contenido-promociones">
                 <li>3 Cuotas sin interés
@@ -116,7 +115,7 @@
                 </li>
             </ul>
         </div>
-        <h2 id="FAQ">FAQ</h2>
+        <h2 class="text-center" id="FAQ">FAQ</h2>
         <ul class="contenedor-preguntas">
             <li class="pregunta"> ¿Como me contacto?<i class="fa-solid fa-angle-down"></i></li>
 
@@ -138,7 +137,7 @@
 
         </ul>
 
-        <h2>Conocé nuestras marcas</h2>
+        <h2 class="text-center">Conocé nuestras marcas</h2>
 
         <div class="contenedor-marca">
             <h6><i class="fa-solid fa-location-dot"></i>Gabino Coria Peñaloza 2910, Ciudad de Córdoba, Argentina</h6>
@@ -148,25 +147,27 @@
                 Iluminación</h5>
         </div>
 
-        <h2>Articulos más vistos</h2>
-        <div class="row w-100 m-5 text-center d-flex justify-content-evenly align-items-center">
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="imagenes/bigbang.jpg">Colgante Big Bang Negra 10 Luces E27</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="imagenes/globofil.jpg">Lampara Globo Filamento LED 6W Humo</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="imagenes/kalmar.jpg">Colgante Kalmar Cristal E27 Ambar</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="imagenes/bohemia.jpg">Colgante Bohemia 8 Luces G9</p>
+        <h2 class="text-center">Articulos más vistos</h2>
+        <div class="container-fluid">
+            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Big Bang Negra 10 Luces E27</p>
+            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Lampara Globo Filamento LED 6W Humo</p>
+            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Kalmar Cristal E27 Ambar</p>
+            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Bohemia 8 Luces G9</p>
         </div>
     </main>
-    <hr>
-    <footer class="d-flex justify-content-center text-center align-items-center w-100">
-        <div class="contenedor-footer">
-            <h5>Grupo Bioluz</h5>
+ 
+    <footer class=>
+        <div class="footer container-fluid justify-content-center text-center align-items-center w-100">
+            <img class="m-2 img__logo--footer" src="imagenes/logo-empresa.png" alt="logo de empresa">
             <div class="contenedor-iconosFooter">
-                <i class="fa-brands fa-instagram" style="color: #756e6d;"></i>
-                <i class="fa-brands fa-facebook" style="color: #756e6d;"></i>
+                <a href="https://www.instagram.com/grupo.bioluz/"><i class="fa-brands fa-instagram" style="color: #e8e2e1;"></i></a>
+                <a href="https://www.facebook.com/bioluz.iluminacion.1"><i class="fa-brands fa-facebook" style="color:#e8e2e1 ;"></i></a>
             </div>
-            <h6>Copyright © 2023 | Grupo Bioluz | Todos los derechos reservados</h6>
-            <div>
+            <h6 class="">Copyright © 2023 | Grupo Bioluz | Todos los derechos reservados</h6>
+        </div>
     </footer>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
