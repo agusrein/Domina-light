@@ -1,108 +1,116 @@
-* {font-family: 'Open Sans', sans-serif;margin: 0px;box-sizing: border-box;padding: 0px;
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
 }
-
-/* Arreglos generales*/
 
 h1 {
-    margin-top: 13%;
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
-    color: rgb(251, 207, 171);
-    font-weight: 800;
-}
-.img__logo{width:350px;}
-@media screen and (max-width:992px) and (min-width:300px){
-    .img__logo{
-        width: 260px;
-        margin:20px 0px;
-    }
-    h1{
-        margin-top: 20%;
-        font-size: 35px;
-    }
+  margin-top: 13%;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
+  color: rgb(251, 207, 171);
+  font-weight: 800;
 }
 
-.nav{
-    position: fixed;
-    z-index: 2;
-    background: rgba(248, 246, 246, 0.882);
-    backdrop-filter: blur(10px);
-    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+.div__container--img {
+  border-bottom: solid 4px #eda756;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  height: 90vh;
+  background-image: url("../imagenes/fondo2.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: left;
 }
-.ul__dropdown{
-    background: rgb(216, 214, 214);
-    border: 1px solid rgb(165, 164, 164);
-    width: 30%;
+.div__container--img h4 {
+  color: #ffffff;
 }
-a {color: #222;}
+.div__container--img button {
+  background-color: rgba(117, 248, 121, 0.9725490196);
+  color: rgb(71, 67, 59);
+  height: 9vh;
+}
+.div__container--img button:hover {
+  background-color: rgba(220, 117, 248, 0.9725490196);
+  cursor: pointer;
+}
+.div__container--img button:active {
+  background-color: rgba(189, 99, 214, 0.9725490196);
+  cursor: pointer;
+}
 
-.footer{
-    background: rgb(141,63,251);
-
-    background: radial-gradient(circle, rgba(141,63,251,1) 0%, rgba(252,152,70,1) 100%);
+.nav {
+  position: fixed;
+  z-index: 2;
+  background: rgba(248, 246, 246, 0.882);
+  backdrop-filter: blur(10px);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
-.img__logo--footer{
-    width: 100px;
-    box-shadow:3px 3px 12px rgba(50, 50, 50, 0.542);
+.nav button {
+  border: none;
+}
+.nav a:active {
+  background-color: #eda756;
+  border-radius: 5px;
+}
+.nav .img__logo {
+  width: 350px;
+}
+@media screen and (max-width: 992px) and (min-width: 300px) {
+  .nav .img__logo {
+    width: 260px;
+    margin: 20px 0px;
+  }
+  .nav h1 {
+    margin-top: 20%;
+    font-size: 35px;
+  }
+}
+
+.ul__dropdown {
+  background: rgb(216, 214, 214);
+  border: 1px solid rgb(165, 164, 164);
+  width: 30%;
+}
+
+a {
+  color: #222;
+}
+
+footer {
+  background: rgb(45, 45, 46);
+  background: radial-gradient(circle, rgb(45, 45, 46) 35%, rgb(220, 220, 222) 100%);
+}
+footer .hr__dividier {
+  border: 1px solid rgb(52, 52, 52);
+}
+footer h6 {
+  color: white;
+  font-size: 13px;
+}
+
+.img__logo--footer {
+  width: 100px;
+  box-shadow: 3px 3px 12px rgba(50, 50, 50, 0.542);
 }
 
 .contenedor-iconosFooter i {
-    margin: 10px;
-    font-size: 27px;
-}
-
-
-.imagen-contenedora button{
-    background-color: #75f879f8;
-    color: rgb(71, 67, 59);
-   height: 9vh;
-}
-.imagen-contenedora button:hover{
-    background-color: #dc75f8f8;
-    cursor: pointer;
-}
-
-.boton-acceder a {
-    background-color: transparent;
-    color: rgb(71, 67, 59);
-}
-.boton-acceder {
-    background-color: #DBDFEA;
-    color: rgb(71, 67, 59);
-    border: 2px solid #DBDFEA;
-    border-radius: 8px;
-    
-    height: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-}
+  margin: 10px;
+  font-size: 27px;
+} /*RESUMIR*/
 li {
-    list-style: none;
+  list-style: none;
 }
 
-
-
-
-/* Arreglos Index*/
-
-
-
-.imagen-contenedora {
-    border-bottom: solid 4px #eda756;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-    height: 90vh;
-    background-image: url("../imagenes/fondo2.jpg");
-    background-position:  center;
-    background-size: cover;
-    text-align: left;
-   
-
+.div__container--info {
+  background: rgb(137, 45, 167);
+  background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039216) 0%, rgba(42, 188, 91, 0.9417016807) 52%, rgb(253, 146, 45) 81%);
+}
+.div__container--info h2, .div__container--info p, .div__container--info a {
+  color: white;
+}
+.div__container--info h2 a:hover, .div__container--info p a:hover, .div__container--info a a:hover {
+  cursor: pointer;
+  font-weight: 600;
 }
 
-
-.subtitulo{color: #ffffff;}
-
-
-
-/*Modificaciones contacto */
+/*# sourceMappingURL=style.css.map */
