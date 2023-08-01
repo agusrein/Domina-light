@@ -2,93 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Lámparas | Domina Light</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="..\imagenes\colgante22.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cf2dcc4586.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Domina Light</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="imagenes\colgante22.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cf2dcc4586.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg nav ">
-            <div class="container-fluid row-sm-11 col-sm-12">
-              <img class="img__logo ms-5 " src="../imagenes/logo-removebg-preview.png" alt="logo de Domina Light">
-              <button class="navbar-toggler col-sm-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse m-4 " id="navbarNav">
+  <header >
+    <nav class="navbar navbar-expand-lg nav w-100 ">
+        <div class="container-fluid d-flex">
+            <img class="img__logo ms-xl-5 ms-sm-5 ms-1" src="../imagenes/logo-removebg-preview.png" alt="logo de Domina Light">
+            <button class="  navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=" navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse m-4 " id="navbarNav">
                 <ul class="navbar-nav w-100 justify-content-xl-evenly">
-                  <li class="nav-item fw-semibold">
-                    <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item fw-semibold">
-                    <a class="nav-link " href="../html/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item fw-semibold">
-                    <a class="nav-link" href="../html/lamparas.html">Lamparas</a>
-                  </li>
-                  <li class="nav-item fw-semibold">
-                    <a class="nav-link" href="../html/estilos.html">Estilos</a>
-                  </li>
-                  <li class="nav-item fw-semibold">
-                      <a class="nav-link" href="../index.html#FAQ">FAQ</a>
+                    <li class="nav-item fw-semibold">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <button class="btn  dropdown-toggle nav-link fw-semibold" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </button>
+                            <ul class="dropdown-menu ms-3 ul__dropdown fw-semibold">
+                                <li><a class="dropdown-item nav-link fw-semibold ps-3"  href="../html/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item nav-link fw-semibold ps-3" href="../html/cotizaciones.html">Cotizaciones</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="nav-item fw-semibold">
+                        <a class="nav-link" href="../html/lamparas.html">Lamparas</a>
+                    </li>
+                    <li class="nav-item fw-semibold">
+                        <a class="nav-link" href="../html/estilos.html">Estilos</a>
+                    </li>
+                    <li class="nav-item fw-semibold ">
+                        <a class="nav-link" href="../index.html#FAQ">FAQ</a>
                     </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-    </header>
-    <main>
-        <h3 class="subtitulo-pagina">Lámparas</h3>
-        <div class="buscador">
-            <span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <label for="buscar">Buscar</label>
-            <input type="search" id="buscar" placeholder="Buscar Productos">
         </div>
-        <div class="contenedor-articulos">
-            <h4 class="articulo"><img src="../imagenes/bigbang.jpg">Colgante Big Bang Negra 10 Luces E27</h4>
-            <h4 class="articulo"><img src="../imagenes/globofil.jpg">Lampara Globo Filamento LED 6W Humo</h4>
-            <h4 class="articulo"><img src="../imagenes/kalmar.jpg">Colgante Kalmar Cristal E27 Ambar</h4>
-            <h4 class="articulo"><img src="../imagenes/bohemia.jpg">Colgante Bohemia 8 Luces G9</h4>
-        </div>
-        <div class="contenedor-articulos">
-            <h4 class="articulo"><img src="../imagenes/aperol.jpg">Colgante Aperol Ambar E27</h4>
-            <h4 class="articulo"><img src="../imagenes/bora.jpg">Colgante Bora Cristal E27</h4>
-            <h4 class="articulo"><img src="../imagenes/bottega.jpg">Colgante Bottega Hierro E27</h4>
-            <h4 class="articulo"><img src="../imagenes/carrara.jpg">Aplique 2L GU10 Carrara</h4>
-        </div>
-        <div class="contenedor-articulos">
-            <h4 class="articulo"><img src="../imagenes/cupido.jpg">Lampara escritorio Cupido</h4>
-            <h4 class="articulo"><img src="../imagenes/earth.jpg">Velador Earth</h4>
-            <h4 class="articulo"><img src="../imagenes/sedona.jpg">Colgante Sedona Cuerda</h4>
-            <h4 class="articulo"><img src="../imagenes/inga.jpg">Colgante Inga 8L Cristal Humo</h4>
-        </div>
-        <div class="contenedor-articulos">
-            <h4 class="articulo"><img src="../imagenes/jems.jpg">Colgante Jems Cristal</h4>
-            <h4 class="articulo"><img src="../imagenes/khalo.jpg">Colgante Khalo Led 50W</h4>
-            <h4 class="articulo"><img src="../imagenes/mac.jpg">Velador Mac E27 Hormigon</h4>
-            <h4 class="articulo"><img src="../imagenes/oaki.jpg">Colgante Oaki 4L Madera</h4>
-        </div>
-    </main>
-    <hr>
-    <footer>
-        <div class="row">
-            <p class="col-sm-12 col-xl-3 col-md-6">Grupo Bioluz</p>
-            <div class="">
-                <i class="fa-brands fa-instagram" style="color: #756e6d;"></i>
-                <i class="fa-brands fa-facebook" style="color: #756e6d;"></i>
-            </div>
-            <p>Copyright © 2023 | Grupo Bioluz | Todos los derechos reservados</p>
+    </nav>
+  </header>
 
+  <main>
+    <div class="div__container--modifier container-fluid">
+        
+    </div>
+    <div class="row container-fluid mt-5 mb-3  justify-content-sm-center justify-content-center">
+        <span class="col-1 text-end fs-3 p-0 w-auto ">
+            <i class="fa-solid fa-magnifying-glass "></i>
+        </span>
+        <form class="d-flex col-xl-4 col-lg-6 col-sm-6 col-md-5 col-8" role="search">
+          <input class=" form-control me-2" type="search" placeholder="Escriba su Búsqueda">
+          <button class="form__button--search col-3 w-auto m-0 p-1 col-sm-auto rounded btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </div>
+    <div class="row m-0 mb-5 container-fluid justify-content-center">
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/aperol.jpg" class="card-img-top" alt="imagen">
+        <div class="card-body">
+          <p class="card-text">APEROL - Colgante de cristal Humo y Ambar</p>
         </div>
-    </footer>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/sedona.jpg" class="card-img-top" alt="imagen">
+        <div class="card-body">
+          <p class="card-text">SEDONA - Colgante Nordico de hierro y cuerda</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/earth.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">EARTH - Velador 5w Led, base madera</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/robot.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">ROBOT II - Aplique dos Luces GU10. Acero </p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/kalmar.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">KALMAR - Colgante cristal Ambar 40cm diametro E27</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/khalo.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">KHALO - Colgante Kalo Led Minimalista 60w</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/inga.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">INGA - Colgante Inga 10 Luces E27 cristal Humo</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/jems.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">JEMS - Colgante Jems 3 luces 30cm 25cm 15cm Cristal Transparente</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/gourmet.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">GOURMET - Colgante gourmet blanco 35cm E27 con det. Madera</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/oaki.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">OAKI - Colgante madera 4xG9 4 luces BASE:90x15cm</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/globofil.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">GLOBO FILAMENTO - Lampara led E27 con filamento espiral Humo 6w</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/mac.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">MAC - Velador Hormigon E27 15X25CM</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/bottega.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">BOTTEHA - Colgante Bottega hierro 50cm</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/bohemia.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">BOHEMIA - Colgante Bohemia Cristal 10xG9 60cm</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/bigbang.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">BIG-BANG - Colgante 10 Luces hierro E27 100x50cm</p>
+        </div>
+      </div>
+      <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+        <img src="../imagenes/cupido.jpg" class="card-img-top" alt="imagen de lamparas">
+        <div class="card-body">
+          <p class="card-text">CUPIDO - Velador Cupido 1XGU10 Cromo</p>
+        </div>
+      </div>
+    </div>
+  </main>
+   
+  <footer>
+    <hr class="hr__dividier mt-5">
+    <div class="container-fluid justify-content-center text-center align-items-center w-100">
+    
+        <img class="m-2" src="../imagenes/logo-empresa.png" alt="logo de empresa">
+        <div>
+            <a href="https://www.instagram.com/grupo.bioluz/"><i class="fa-brands fa-instagram" style="color: #e8e2e1;"></i></a>
+            <a href="https://www.facebook.com/bioluz.iluminacion.1"><i class="fa-brands fa-facebook" style="color:#e8e2e1 ;"></i></a>
+        </div>
+        <h6 class="pb-2">Copyright © 2023 | Grupo Bioluz | Todos los derechos reservados</h6>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
-
 </html>

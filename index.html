@@ -15,6 +15,7 @@
 
 <body >
     <header >
+   
         <nav class="navbar navbar-expand-lg nav w-100 ">
             <div class="container-fluid d-flex">
                 <img class="img__logo ms-xl-5 ms-sm-5 ms-1" src="imagenes/logo-removebg-preview.png" alt="logo de Domina Light">
@@ -24,7 +25,7 @@
                     <span class=" navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse m-4 " id="navbarNav">
-                    <ul class="navbar-nav w-100 justify-content-xl-evenly">
+                    <ul class="navbar-nav w-100 justify-content-xl-evenly justify-content-lg-evenly">
                         <li class="nav-item fw-semibold">
                             <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
@@ -63,8 +64,8 @@
     </header>
     <main>
 
-        <h2 class="text-center mt-5 mb-5">Sucursales</h2>
-        <div class=" row container-fluid justify-content-md-center justify-content-sm-center p-0">
+        <h2 class="text-center mt-5 mb-5" id="sucursal">Sucursales</h2>
+        <div class="row container-fluid justify-content-md-center justify-content-sm-center p-0 m-0">
             <div class="col-xl-3 col-md-6 col-sm-12 d-flex flex-column align-items-center">
                 <img src="imagenes/bioluz-iluminacion.png" class="shadow rounded-circle mt-xl-0 mt-lg-0" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
               <h2 class="mt-3 fs-4 fw-semibold text-center">Domina Light - Iluminacion </h2>
@@ -84,10 +85,10 @@
                 <p><a class="btn btn-dark shadow-lg" href="https://www.google.com/maps/place/Alsina+%26+Independencia,+Godoy+Cruz,+Mendoza/@-32.9324645,-68.8251307,17z/data=!3m1!4b1!4m6!3m5!1s0x967e0be57d5c04bb:0x2a1b973389bf17a9!8m2!3d-32.9324645!4d-68.8251307!16s%2Fg%2F11h9rt3ss5?entry=ttu"><i class=" pe-1 fa-solid fa-map-pin" style="color: #ed8207;"></i>Alsina & Independencia - Godoy Cruz &raquo;</a></p>
               </div>
         </div>
-            <div class="row w-100 mt-5 mb-5 ">
-            <div class="div__container--info container-fluid rounded-5 col-10 shadow">
-                <h2 class="text-center mt-3 fw-semibold">¿Quienes Somos?</h2>
-                <p class="text-center pt-3 ps-4 pe-4">
+            <div class="row w-100 m-0 p-0 mt-5 mb-5 pt-5">
+            <div class="div__container--info container-fluid rounded-5 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 p-0 shadow pt-4">
+                <h2 class="text-center mt- fw-semibold">¿Quienes Somos?</h2>
+                <p class="text-center pt-3 ps-4 pe-4">5
                     Domina Light es una de las sucursales pertenecientes a Grupo Bioluz, destinada a la venta
                     especializada de Iluminacion Decorativa. El local comenzo su trayecto a principios del año 2019,
                     hemos atravesado incansables inconvenientes para seguir adelante. Gracias a muchos de nuestros
@@ -102,90 +103,131 @@
             </div>
             </div>
         
-
-        <h2 class="text-center">¿Sos electricista, constructor o arquitecto?</h2>
-        <div class="contenedor-especial">
-            <h4>Queremos que trabajes junto a nosotros</h4>
+        <div class="container-fluid row justify-content-center p-0 m-0">
+        <h2 class="text-center mt-5 mb-3 pt-5">¿Sos electricista, constructor o arquitecto?</h2>
+            <h4 class="fs-5 pb-5 text-center ">Queremos que trabajes junto a nosotros</h4>
+        <div class="col-xl-8 col-lg-8 col-sm-10 col-md-10 col-12">
+            <p class="fs-6 fw-semibold"><i class="pt-2 pe-2 fs-4 ps-3 fa-regular fa-circle-check" style="color: #eda756;"></i>Lista de precios especiales</p>
+            <p class="fs-6 fw-semibold"><i class="pt-2 pe-2 fs-4 ps-3 fa-regular fa-circle-check" style="color: #eda756;"></i>Descuentos únicos para vos y tu equipo
+                de trabajo</p>
+            <p class="fs-6 fw-semibold"><i class="pt-2 pe-2 fs-4 ps-3 fa-regular fa-circle-check" style="color: #eda756;"></i>Comisiones</p>
         </div>
-        <div class="contenido-especial">
-            <h4><i class="fa-regular fa-circle-check" style="color: #756e6d;"></i>Lista de precios especiales</h4>
-            <h4><i class="fa-regular fa-circle-check" style="color: #756e6d;"></i>Descuentos únicos para vos y tu equipo
-                de trabajo</h4>
-            <h4><i class="fa-regular fa-circle-check" style="color: #756e6d;"></i>Comisiones</h4>
+        <div class="text-center mt-5">
+            <h4 class="fs-6">Conocé más</h4> 
+            <button class="div__button--acs mb-5 text-uppercase rounded-pill"><a class="text-decoration-none p-3 fw-semibold" href="html/contacto.html">Acceder</a></button>
         </div>
-        <div class="index-conoceMas">
-            <h4>Conocé más</h4> <button class="boton-acceder"><a href="html/contacto.html">Acceder</a></button>
-        </div>
-        <div class="contenedor-promociones">
-            <h2 class="text-center">Promociones</h2>
-
-            <ul class="contenido-promociones">
-                <li>3 Cuotas sin interés
-                    <h5>Con tarjetas bancarizadas</h5>
+      </div>
+        <div class="container-fluid div__container--promo shadow-lg">
+          <h2 class="mb-5 pt-5 mt-5 fw-semibold text-center">Promociones</h2>
+          <ul class="row m-0 p-0 mb-5">
+              <li class="text-center fs-4 fw-semibold col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">3 Cuotas sin interés
+                  <p class="fs-6 pb-5 fw-normal">Con tarjetas bancarizadas</p>
+              </li>
+              <li class="text-center fs-4 fw-semibold col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">15% Descuento
+                  <p class="fs-6 pb-5 fw-normal">Contado efectivo o transferencia</p>
+              </li>
+              <li class="text-center fs-4 fw-semibold mb-5 pb-5 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">10% Descuento
+                  <p class="fs-6  fw-normal">Debito automatico</p>
+              </li>
+          </ul>
+      </div> 
+        <h2 class="text-center mb-5 pt-5 mt-5" id="FAQ">FAQ</h2>
+        <div class="div__container--faq container-fluid m-0 p-0 row mb-5 pb-5">
+            <div class="dropdown d-flex p-0 justify-content-center">
+              <button class="pt-2 pb-2 btn col-10 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ¿Puedo realizar devoluciones?
+              </button>
+              <ul class=" dropdown-menu col-10">
+                <li class="text-start p-2"2<p>Las devoluciones o cambios se realizarán hasta los 20 días de realizada la
+                    compra/entrega de dichos productos. Es importante destacar que deberá ser en su empaque original y en
+                    las mismas condiciones que se han entregado (Sin excepción)<p>
+                        </p><p>
+                    Lamparas, paneles, focos o de cualquier tipo que su vida util se vea afectada por su consumo, se
+                    consentirá unicamente 7 dias de realizada la compra.</p></li>
+              </ul>
+            </div>
+            <div class="dropdown d-flex p-0 justify-content-center">
+                <button class="pt-2 pb-2 btn col-10 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ¿Como me contacto?
+                </button>
+                <ul class=" dropdown-menu col-10">
+                  <li class="text-start p-2"><p>Disponemos de un apartado de contacto en nuestro menú de navegacion. En el mismo podrás optar por distintos motivos de consulta, ya sea por trabajar junto a nosotros, cotizaciones o cualquier otro de cualquier otro tipo</p></li>
+                </ul>
+              </div>
+              <div class="dropdown d-flex p-0 justify-content-center">
+                <button class="pt-2 pb-2 btn col-10 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ¿Cuentan con catalogos virtuales?
+                </button>
+                <ul class=" dropdown-menu col-10">
+                  <li class="text-start p-2"><p>Tenemos múltiples catálogos segun el estilo de ambiente que quieras darle a tu hogar, para que podamos adjuntartelos, dirígete a la pestaña contacto de nuestro menú de navegacion, y ponte en contacto con nosotros! Nos encantaría ayudarte.</p>
+                <p>En caso que no sepas cual es el estilo de tu hogar, te brindamos una breve guia <a href="html/estilos.html#estilos">aquí.</a>
+                </p>
                 </li>
-                <li>15% Descuento
-                    <h5>Contado efectivo o transferencia</h5>
-                </li>
-                <li>10% Descuento
-                    <h5>Debito automatico</h5>
-                </li>
-            </ul>
-        </div>
-        <h2 class="text-center" id="FAQ">FAQ</h2>
-        <ul class="contenedor-preguntas">
-            <li class="pregunta"> ¿Como me contacto?<i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+              </div>
+              <div class="dropdown d-flex p-0 justify-content-center">
+                <button class="pt-2 pb-2 btn col-10 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ¿Donde encuentro sus locales?
+                </button>
+                <ul class=" dropdown-menu col-10">
+                  <li class="text-start p-2"><p>Contamos con 3 sucursales, según la atención que estes buscando podes visitarnos <a href="index.html#sucursal">aquí.</a></p></li>
+                </ul>
+              </div>
+            </div>
 
+        <h2 class="text-center mb-4 pb-5" id="marcas">Conocé nuestras marcas</h2>
 
-            <li class="pregunta"> ¿Cuentan con catalogos virtuales?<i class="fa-solid fa-angle-down"></i></li>
-
-
-            <li class="pregunta"> ¿Donde encuentro sus locales?<i class="fa-solid fa-angle-down"></i></li>
-
-
-            <li class="pregunta-contestada"> ¿Puedo realizar devoluciones?<i class="fa-solid fa-window-minimize"></i>
-            </li>
-            <p class="respuesta">Las devoluciones o cambios se realizarán hasta los 20 días de realizada la
-                compra/entrega de dichos productos. Es importante destacar que deberá ser en su empaque original y en
-                las mismas condiciones que se han entregado (Sin excepción)
-
-                Lamparas, paneles, focos o de cualquier tipo que su vida util se vea afectada por su consumo, se
-                consentirá unicamente 7 dias de realizada la compra.</p>
-
-        </ul>
-
-        <h2 class="text-center">Conocé nuestras marcas</h2>
-
-        <div class="contenedor-marca">
-            <h6><i class="fa-solid fa-location-dot"></i>Gabino Coria Peñaloza 2910, Ciudad de Córdoba, Argentina</h6>
-            <h6><i class="fa-solid fa-phone"></i>(+54) 0 351 - 4856754 / 5240227 / 5897272</h6>
-            <h6><i class="fa-solid fa-envelope"></i>info@180grados.com.ar</h6>
-            <h5><img src="imagenes/180-iluminacion_Logo-b.png" class="logo-marca" alt="logo marca 180 iluminacion">180°
-                Iluminación</h5>
+        <div class="container-fluid row justify-content-center m-0 p-0">
+          <div class=" div__container--marcas col-xl-4 col-lg-6 col-md-8 col-sm-10 col-12 rounded-4">
+            <p class="pt-3"><i class="ps-2 pe-3 fa-solid fa-location-dot"></i>Gabino Coria Peñaloza 2910, Ciudad de Córdoba, Argentina</p>
+            <p class="pt-3"><i class="ps-2 pe-3 fa-solid fa-phone"></i>(+54) 0 351 - 4856754 / 5240227 / 5897272</p>
+            <p class="pt-3"><i class="ps-2 pe-3 fa-solid fa-envelope"></i>info@180grados.com.ar</p>
+            <p class="p-2"><img src="imagenes/180-iluminacion_Logo-b.png" class="me-4" alt="logo marca 180 iluminacion">180°
+                Iluminación</p>
+          </div>
         </div>
 
-        <h2 class="text-center">Articulos más vistos</h2>
-        <div class="container-fluid">
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Big Bang Negra 10 Luces E27</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Lampara Globo Filamento LED 6W Humo</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Kalmar Cristal E27 Ambar</p>
-            <p class="col-xl-3 col-md-6 col-sm-12 articulo"><img src="">Colgante Bohemia 8 Luces G9</p>
+        <h2 class="text-center mt-5 pt-5 mb-5">Articulos más vistos</h2>
+        <div class="row m-0 mb-5 container-fluid justify-content-center">
+        <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+            <img src="imagenes/bottega.jpg" class="card-img-top" alt="imagen de lamparas">
+            <div class="card-body">
+              <p class="card-text">BOTTEHA - Colgante Bottega hierro 50cm</p>
+            </div>
+          </div>
+          <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+            <img src="imagenes/bohemia.jpg" class="card-img-top" alt="imagen de lamparas">
+            <div class="card-body">
+              <p class="card-text">BOHEMIA - Colgante Bohemia Cristal 10xG9 60cm</p>
+            </div>
+          </div>
+          <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+            <img src="imagenes/bigbang.jpg" class="card-img-top" alt="imagen de lamparas">
+            <div class="card-body">
+              <p class="card-text">BIG-BANG - Colgante 10 Luces hierro E27 100x50cm</p>
+            </div>
+          </div>
+          <div class="div__container--card card m-3 col-xl-3 col-md-4 col-sm-6 col-12" style="width: 18rem;">
+            <img src="imagenes/cupido.jpg" class="card-img-top" alt="imagen de lamparas">
+            <div class="card-body">
+              <p class="card-text">CUPIDO - Velador Cupido 1XGU10 Cromo</p>
+            </div>
+          </div>
         </div>
+       
     </main>
  
     <footer>
         <hr class="hr__dividier">
         <div class="container-fluid justify-content-center text-center align-items-center w-100">
-           
-            <img class="m-2 img__logo--footer" src="imagenes/logo-empresa.png" alt="logo de empresa">
-            <div class="contenedor-iconosFooter">
+            <img class="m-2" src="imagenes/logo-empresa.png" alt="logo de empresa">
+            <div>
                 <a href="https://www.instagram.com/grupo.bioluz/"><i class="fa-brands fa-instagram" style="color: #e8e2e1;"></i></a>
                 <a href="https://www.facebook.com/bioluz.iluminacion.1"><i class="fa-brands fa-facebook" style="color:#e8e2e1 ;"></i></a>
             </div>
             <h6 class="pb-2">Copyright © 2023 | Grupo Bioluz | Todos los derechos reservados</h6>
         </div>
     </footer>
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>

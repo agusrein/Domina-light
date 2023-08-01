@@ -1,0 +1,50 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  @media screen and (max-width: 992px) and (min-width: 300px) {
+    .div__container--modifier{height: 20vh;}
+    }
+    @media screen and (max-width: 1800px) and (min-width: 990px){
+    .div__container--modifier{height: 15vh}
+  }
+
+  div span i {
+    color: rgb(93, 93, 93);
+    text-shadow: -5px -5px 5px #4e4d4d;
+    font-size: 23px;
+  }
+  
+  .form__button--search {
+    background-color: rgb(234, 139, 31);
+    color: white;
+    border: 2px solid rgb(219, 133, 27);
+  
+    &:hover {
+      background-color: rgb(235, 129, 7);
+      color: white;
+      border: 2px solid rgb(235, 133, 8);
+    }
+  
+    &:focus {
+      background-color: rgba(138, 69, 183, 0.899); 
+      border: 2px solid rgb(116, 57, 154); 
+    }
+  }
+
+  .div__container--card {
+    &:hover {
+      border: 3px solid rgba(234, 139, 31, 0.773);
+      cursor: pointer;
+      box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
+    }
+  
+    &:active {
+      border: 3px solid rgba(250, 149, 33, 0.962);
+      cursor: pointer;
+      box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
+    }
+  }
+ 
