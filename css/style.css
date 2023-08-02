@@ -54,6 +54,19 @@ div span i {
   box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
 }
 
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.section__container--style h3 {
+  background-color: #eda756;
+  color: rgb(59, 59, 59);
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
   margin-top: 13%;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
@@ -90,7 +103,7 @@ h1 {
 .nav {
   position: fixed;
   z-index: 2;
-  background: rgba(248, 246, 246, 0.882);
+  background: rgba(248, 246, 246, 0.949);
   backdrop-filter: blur(10px);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
@@ -109,10 +122,6 @@ h1 {
     width: 260px;
     margin: 20px 0px;
   }
-  .nav h1 {
-    margin-top: 20%;
-    font-size: 35px;
-  }
 }
 
 .ul__dropdown {
@@ -127,10 +136,10 @@ a {
 
 footer {
   background: rgb(45, 45, 46);
-  background: radial-gradient(circle, rgb(45, 45, 46) 35%, rgb(220, 220, 222) 100%);
+  background: radial-gradient(circle, rgb(45, 45, 46) 51%, rgb(64, 64, 65) 66%, rgb(96, 96, 103) 82%, rgb(146, 146, 154) 100%);
 }
 footer .hr__dividier {
-  border: 1px solid rgb(52, 52, 52);
+  border: 1px solid rgb(211, 209, 209);
 }
 footer h6 {
   color: white;
@@ -153,10 +162,14 @@ li {
   background: rgb(137, 45, 167);
   background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039216) 0%, rgba(42, 188, 91, 0.9417016807) 52%, rgb(253, 146, 45) 81%);
 }
-.div__container--info h2, .div__container--info p, .div__container--info a {
+.div__container--info h2,
+.div__container--info p,
+.div__container--info a {
   color: white;
 }
-.div__container--info h2 a:hover, .div__container--info p a:hover, .div__container--info a a:hover {
+.div__container--info h2 a:hover,
+.div__container--info p a:hover,
+.div__container--info a a:hover {
   cursor: pointer;
   font-weight: 600;
 }
@@ -187,7 +200,8 @@ li {
 .div__container--marcas {
   background-color: #222;
 }
-.div__container--marcas p, .div__container--marcas i {
+.div__container--marcas p,
+.div__container--marcas i {
   color: white;
 }
 
