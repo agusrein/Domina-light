@@ -5,13 +5,6 @@
   padding: 0px;
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  box-sizing: border-box;
-  padding: 0px;
-}
-
 @media screen and (max-width: 992px) and (min-width: 300px) {
   .div__container--modifier {
     height: 20vh;
@@ -52,13 +45,6 @@ div span i {
   border: 3px solid rgba(250, 149, 33, 0.962);
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
-}
-
-* {
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  box-sizing: border-box;
-  padding: 0px;
 }
 
 .section__container--style h3 {
@@ -103,7 +89,7 @@ h1 {
 .nav {
   position: fixed;
   z-index: 2;
-  background: rgba(248, 246, 246, 0.949);
+  background: rgba(248, 246, 246, 0.982);
   backdrop-filter: blur(10px);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
