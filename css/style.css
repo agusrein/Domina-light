@@ -22,27 +22,27 @@ div span i {
 }
 
 .form__button--search {
-  background-color: rgb(234, 139, 31);
+  background-color: #eda756;
   color: white;
   border: 2px solid rgb(219, 133, 27);
 }
 .form__button--search:hover {
-  background-color: rgb(235, 129, 7);
+  background-color: rgb(231, 150, 58);
   color: white;
   border: 2px solid rgb(235, 133, 8);
 }
 .form__button--search:focus {
-  background-color: rgba(138, 69, 183, 0.899);
+  background-color: rgba(189, 99, 214, 0.9725490196);
   border: 2px solid rgb(116, 57, 154);
 }
 
 .div__container--card:hover {
-  border: 3px solid rgba(234, 139, 31, 0.773);
+  border: 3px solid #eda756;
   cursor: pointer;
   box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
 }
 .div__container--card:active {
-  border: 3px solid rgba(250, 149, 33, 0.962);
+  border: 3px solid rgb(231, 150, 58);
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
 }
@@ -53,11 +53,245 @@ div span i {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-  margin-top: 13%;
-  text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
-  color: rgb(251, 207, 171);
-  font-weight: 800;
+.div__container--text-us {
+  height: 40vh;
+  background-color: #52c16a;
+  border: 4px solid rgba(34, 34, 34, 0.1333333333);
+  border-left: none;
+  border-right: none;
+}
+.div__container--text-us h2 {
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+.div__container--text-us h5 {
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+
+.div__container--form {
+  transform: translate(0px, -115px);
+  backdrop-filter: blur(10px);
+  background: rgba(34, 34, 34, 0.6549019608);
+  border: 4px solid rgba(34, 34, 34, 0.1333333333);
+  border-right: 2px solid rgba(34, 34, 34, 0.1333333333);
+  height: 100vh;
+  color: white;
+}
+.div__container--form h2,
+.div__container--form h5 {
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+.div__container--form textarea {
+  background-color: rgba(254, 255, 255, 0.86);
+  outline: none;
+  font-size: 15px;
+  height: 20vh;
+  overflow: hidden;
+  resize: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.div__container--form textarea:hover {
+  transform: scale(1.02, 1);
+}
+.div__container--form textarea:focus {
+  border: 2px solid #52c16a;
+}
+.div__container--form input {
+  background-color: rgba(254, 255, 255, 0.86);
+  outline: none;
+  height: 5vh;
+  border: rgba(34, 34, 34, 0.1333333333);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.div__container--form input::placeholder {
+  font-size: 15px;
+}
+.div__container--form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.div__container--form input:hover {
+  transform: scale(1.02, 1);
+}
+.div__container--form input:focus {
+  border: 2px solid #52c16a;
+}
+.div__container--form select {
+  outline: none;
+  background-color: rgba(254, 255, 255, 0.86);
+  font-size: 15px;
+  height: 5vh;
+  color: grey;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.div__container--form select:hover {
+  transform: scale(1.02, 1);
+}
+.div__container--form select:focus {
+  border: 2px solid #52c16a;
+  background-color: rgb(235, 239, 239);
+}
+.div__container--form button {
+  transition: all 0.5s;
+  height: 5vh;
+  border: rgba(34, 34, 34, 0.1333333333);
+  background-color: #52c16a;
+}
+.div__container--form button:hover {
+  transform: scale(1.03, 1.02);
+  background-color: rgba(220, 117, 248, 0.9725490196);
+}
+.div__container--form button:active {
+  background-color: rgba(189, 99, 214, 0.9725490196);
+}
+
+.div__container--contact-information {
+  transform: translate(0px, -115px);
+  backdrop-filter: blur(10px);
+  background: rgba(34, 34, 34, 0.6549019608);
+  border: 4px solid rgba(34, 34, 34, 0.1333333333);
+  border-left: 2px solid rgba(34, 34, 34, 0.1333333333);
+  height: 100vh;
+  color: white;
+}
+.div__container--contact-information i {
+  color: #52c16a;
+}
+.div__container--contact-information h2,
+.div__container--contact-information p {
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+.div__container--contact-information iframe {
+  transition: all 0.5s;
+}
+.div__container--contact-information iframe:hover {
+  transform: scale(1.04, 1);
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .div__container--form {
+    transform: translate(0px, -60px);
+    border: 4px solid rgba(34, 34, 34, 0.1333333333);
+    border-radius: 5px;
+    height: 100vh;
+  }
+  .div__container--contact-information {
+    transform: translate(0px, -60px);
+    border: 4px solid rgba(34, 34, 34, 0.1333333333);
+    border-radius: 5px;
+    margin-top: 45px;
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .div__container--contact-information,
+  .div__container--form {
+    transform: translate(0px, -100px);
+  }
+}
+.div__container--form-price {
+  position: relative;
+  z-index: 1;
+  color: white;
+  border: 4px solid rgba(34, 34, 34, 0.1333333333);
+  background: rgba(34, 34, 34, 0.6549019608);
+  backdrop-filter: blur(10px);
+  margin-left: 10%;
+  height: 100vh;
+}
+.div__container--form-price h2,
+.div__container--form-price h5 {
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+.div__container--form-price input {
+  background-color: rgba(254, 255, 255, 0.86);
+  outline: none;
+  height: 5vh;
+  border: rgba(34, 34, 34, 0.1333333333);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.div__container--form-price input::placeholder {
+  font-size: 15px;
+}
+.div__container--form-price input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.div__container--form-price input:hover {
+  transform: scale(1.02, 1);
+}
+.div__container--form-price input:focus {
+  border: 2px solid #52c16a;
+}
+.div__container--form-price select {
+  outline: none;
+  background-color: rgba(254, 255, 255, 0.86);
+  font-size: 15px;
+  height: 5vh;
+  color: grey;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.div__container--form-price select:hover {
+  transform: scale(1.02, 1);
+}
+.div__container--form-price select:focus {
+  border: 2px solid #52c16a;
+  background-color: rgb(235, 239, 239);
+}
+.div__container--form-price button {
+  transition: all 0.5s;
+  height: 5vh;
+  border: rgba(34, 34, 34, 0.1333333333);
+  background-color: #52c16a;
+}
+.div__container--form-price button:hover {
+  transform: scale(1.03, 1.02);
+  background-color: rgba(220, 117, 248, 0.9725490196);
+}
+.div__container--form-price button:active {
+  background-color: rgba(189, 99, 214, 0.9725490196);
+}
+
+.div__container--sales-area {
+  border: 4px solid rgba(34, 34, 34, 0.1333333333);
+  background-color: #52c16a;
+  border-top-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  transform: translate(0px, -200px);
+  color: rgb(66, 65, 65);
+}
+.div__container--sales-area p {
+  text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+.div__container--sales-area .div__dividier {
+  border-bottom: 3px solid rgba(34, 34, 34, 0.1333333333);
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 994px) {
+  .div__container--form-price {
+    margin: 0;
+  }
+  .div__container--sales-area {
+    transform: translate(0px, 0px);
+    margin-top: 3%;
+  }
+}
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .div__container--img {
@@ -69,21 +303,39 @@ h1 {
   background-size: cover;
   text-align: left;
 }
+.div__container--img h1 {
+  font-size: 40px;
+  margin-top: 13%;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.349);
+  color: rgb(246, 209, 139);
+  font-weight: 800;
+}
 .div__container--img h4 {
   color: #ffffff;
 }
 .div__container--img button {
-  background-color: rgba(117, 248, 121, 0.9725490196);
+  transition: all 0.5s;
+  background-color: rgba(149, 234, 125, 0.9725490196);
   color: rgb(71, 67, 59);
   height: 9vh;
+  cursor: pointer;
 }
 .div__container--img button:hover {
+  transform: scale(1.03, 1.02);
   background-color: rgba(220, 117, 248, 0.9725490196);
-  cursor: pointer;
 }
 .div__container--img button:active {
   background-color: rgba(189, 99, 214, 0.9725490196);
-  cursor: pointer;
+}
+@media screen and (min-width: 715px) and (max-width: 992px) {
+  .div__container--img h1 {
+    margin-top: 15%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 715px) {
+  .div__container--img h1 {
+    margin-top: 25%;
+  }
 }
 
 .nav {
@@ -96,6 +348,12 @@ h1 {
 .nav button {
   border: none;
 }
+.nav li {
+  transition: transform 0.5s;
+}
+.nav li:hover {
+  transform: translate(0px, -3px);
+}
 .nav a:active {
   background-color: #eda756;
   border-radius: 5px;
@@ -103,7 +361,7 @@ h1 {
 .nav .img__logo {
   width: 350px;
 }
-@media screen and (max-width: 992px) and (min-width: 300px) {
+@media screen and (min-width: 300px) and (max-width: 992px) {
   .nav .img__logo {
     width: 260px;
     margin: 20px 0px;
@@ -133,7 +391,6 @@ footer h6 {
 }
 footer img {
   width: 100px;
-  box-shadow: 3px 3px 12px rgba(50, 50, 50, 0.542);
 }
 footer i {
   margin: 10px;
@@ -144,28 +401,51 @@ li {
   list-style: none;
 }
 
-.div__container--info {
+.div__container--about {
   background: rgb(137, 45, 167);
   background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039216) 0%, rgba(42, 188, 91, 0.9417016807) 52%, rgb(253, 146, 45) 81%);
 }
-.div__container--info h2,
-.div__container--info p,
-.div__container--info a {
+.div__container--about h2,
+.div__container--about p,
+.div__container--about a {
   color: white;
 }
-.div__container--info h2 a:hover,
-.div__container--info p a:hover,
-.div__container--info a a:hover {
-  cursor: pointer;
+.div__container--about h2 a:hover,
+.div__container--about p a:hover,
+.div__container--about a a:hover {
   font-weight: 600;
 }
 
+.div__container--info button {
+  transition: all 0.5s;
+  background-color: #52c16a;
+  border: 3px solid #52c16a;
+  height: 6vh;
+}
+.div__container--info button a {
+  font-size: 14px;
+}
+.div__container--info button:hover {
+  transform: scale(1.03, 1.02);
+  background-color: rgba(63, 63, 63, 0.929);
+  border: 3px solid rgba(63, 63, 63, 0.929);
+}
+.div__container--info button:hover a {
+  color: white;
+}
+.div__container--info i {
+  text-shadow: 0px 5px 10px rgba(59, 59, 59, 0.348);
+  color: #52c16a;
+}
+
 .div__container--faq button {
+  transition: all 0.5s;
   border-bottom: 2px solid rgba(220, 117, 248, 0.9725490196);
 }
 .div__container--faq button:hover {
   font-weight: 600;
-  border-bottom: 3px solid rgba(117, 248, 121, 0.9725490196);
+  font-size: 17px;
+  border-bottom: 3px solid rgba(63, 63, 63, 0.929);
 }
 .div__container--faq button:active {
   border: none;
@@ -173,30 +453,45 @@ li {
 .div__container--faq button:focus {
   border: none;
   font-weight: 600;
-  border-bottom: 2px solid rgba(117, 248, 121, 0.9725490196);
+  font-size: 17px;
+  border-bottom: 2px solid rgba(63, 63, 63, 0.929);
 }
 .div__container--faq ul {
-  background-color: #9eefa1;
+  background-color: rgba(63, 63, 63, 0.929);
 }
-
-.div__container--promo {
-  background-color: rgba(220, 117, 248, 0.9725490196);
-}
-
-.div__container--marcas {
-  background-color: #222;
-}
-.div__container--marcas p,
-.div__container--marcas i {
+.div__container--faq ul p, .div__container--faq ul a {
   color: white;
 }
 
-.div__button--acs {
-  background-color: #eda756;
-  border: 2px solid #e49335;
+.div__container--offer {
+  background: rgb(205, 111, 231);
+  background: linear-gradient(39deg, rgb(205, 111, 231) 24%, rgb(194, 91, 222) 52%, rgb(205, 111, 231) 83%);
 }
-.div__button--acs:hover {
-  background-color: #e78c24;
+.div__container--offer p {
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(64, 64, 64, 0.619);
+}
+
+.div__container--carrousel {
+  height: 55vh;
+  background-image: url("../imagenes/prueba3.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: -2px 6px 60px -7px rgba(0, 0, 0, 0.42);
+}
+
+.div__container--brand {
+  backdrop-filter: blur(10px);
+  background: rgba(34, 34, 34, 0.6549019608);
+}
+.div__container--brand img {
+  width: 23%;
+  height: 10vh;
+}
+.div__container--brand p,
+.div__container--brand i {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

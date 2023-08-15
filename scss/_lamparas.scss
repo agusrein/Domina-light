@@ -1,4 +1,4 @@
-
+@import"variables";
 
 @media screen and (max-width: 992px) and (min-width: 300px) {
   .div__container--modifier {
@@ -19,31 +19,32 @@ div span i {
 }
 
 .form__button--search {
-  background-color: rgb(234, 139, 31);
+  background-color: $orange;
   color: white;
   border: 2px solid rgb(219, 133, 27);
 
   &:hover {
-    background-color: rgb(235, 129, 7);
+    background-color: $orangePseudoclass;
     color: white;
     border: 2px solid rgb(235, 133, 8);
+
   }
 
   &:focus {
-    background-color: rgba(138, 69, 183, 0.899);
+    background-color: $violetPseudoclass;
     border: 2px solid rgb(116, 57, 154);
   }
 }
 
 .div__container--card {
   &:hover {
-    border: 3px solid rgba(234, 139, 31, 0.773);
+    border: 3px solid $orange;
     cursor: pointer;
     box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
   }
 
   &:active {
-    border: 3px solid rgba(250, 149, 33, 0.962);
+    border: 3px solid $orangePseudoclass;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
   }
