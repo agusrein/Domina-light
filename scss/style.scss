@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0px;
 }
+
 @import "variables";
 @import "mixin";
 @import "lamparas";
@@ -13,8 +14,13 @@
 @import "cotizaciones";
 
 
-html{height: 100%;}
-a{@include anclas;}
+html {
+  height: 100%;
+}
+
+a {
+  @include anclas;
+}
 
 
 .div__container--img {
@@ -35,9 +41,9 @@ a{@include anclas;}
   }
 
   h4 {
-    
+
     color: #ffffff;
-    
+
   }
 
   button {
@@ -46,15 +52,27 @@ a{@include anclas;}
     color: rgb(71, 67, 59);
     height: 9vh;
     cursor: pointer;
-    &:hover{
-      @include button-transform ;
-      background-color: $violet;}
-    &:active {background-color: $violetPseudoclass;}
+
+    &:hover {
+      @include button-transform;
+      background-color: $violet;
+    }
+
+    &:active {
+      background-color: $violetPseudoclass;
+    }
   }
-  @media screen and (min-width: 715px) and (max-width: 992px){
-  h1{margin-top:15%;}}
+
+  @media screen and (min-width: 715px) and (max-width: 992px) {
+    h1 {
+      margin-top: 15%;
+    }
+  }
+
   @media screen and (min-width:300px) and (max-width:715px) {
-  h1{margin-top:25%;}
+    h1 {
+      margin-top: 25%;
+    }
   }
 
 }
@@ -68,14 +86,22 @@ a{@include anclas;}
   backdrop-filter: blur(10px);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 
+  a {
+    font-size: 17px;
+  }
+
   button {
     border: none;
   }
-  li{transition: transform 0.5s;
-  &:hover{
-    transform: translate(0px,-3px);
+
+  li {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translate(0px, -3px);
+    }
   }
-}
+
   a:active {
     background-color: $orange;
     border-radius: 5px;
@@ -84,8 +110,9 @@ a{@include anclas;}
   .img__logo {
     width: 350px;
   }
+
   @media screen and (min-width: 300px) and (max-width: 992px) {
-      .img__logo {
+    .img__logo {
       width: 260px;
       margin: 20px 0px;
     }
@@ -106,7 +133,7 @@ a {
 }
 
 footer {
-  
+
   background: rgb(45, 45, 46);
   background: radial-gradient(circle, rgba(45, 45, 46, 1) 51%, rgba(64, 64, 65, 1) 66%, rgba(96, 96, 103, 1) 82%, rgba(146, 146, 154, 1) 100%);
 
@@ -121,7 +148,7 @@ footer {
 
   img {
     width: 100px;
-   
+
   }
 
   i {
@@ -137,39 +164,51 @@ li {
 .div__container--about {
   background: rgb(137, 45, 167);
   background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039215686274) 0%, rgba(42, 188, 91, 0.9417016806722689) 52%, rgba(253, 146, 45, 1) 81%);
-  h2,
+  color: white;
+
   p,
   a {
+    font-size: 18px;
     color: white;
-    & a:hover {
-      
-      font-weight: 600;
-    }
+  }
+
+  & a:hover {
+    font-weight: 600;
   }
 }
 
+
 .div__container--info {
-  button{
-  @include button;
-  background-color: $greenPseudoclass;
-  border: 3px solid $greenPseudoclass;
-  height: 6vh;
-  a{
-    font-size: 14px;
+  button {
+    @include button;
+    background-color: $greenPseudoclass;
+    border: 3px solid $greenPseudoclass;
+    height: 6vh;
+
+    a {
+      font-size: 14px;
+    }
+
+    &:hover {
+      @include button-transform;
+      background-color: $black;
+      border: 3px solid $black;
+
+      a {
+        color: white;
+      }
+    }
   }
-  &:hover {
-    @include button-transform;
-    background-color: $black;
-    border: 3px solid $black;
-    a{color: white;}
+
+  i {
+    text-shadow: 0px 5px 10px rgba(59, 59, 59, 0.348);
+    color: $greenPseudoclass;
   }
-  }
- i{text-shadow: 0px 5px 10px rgba(59, 59, 59, 0.348);color: $greenPseudoclass;}
-  
+
 }
 
 .div__container--faq {
-  button{
+  button {
     @include button;
     border-bottom: 2px solid $violet;
 
@@ -193,34 +232,46 @@ li {
 
   ul {
     background-color: $black;
-    p,a{color: white;}
+
+    p,
+    a {
+      color: white;
+    }
   }
 }
 
 .div__container--offer {
-  background: rgb(205,111,231);
-  background: linear-gradient(39deg, rgba(205,111,231,1) 24%, rgba(194,91,222,1) 52%, rgba(205,111,231,1) 83%);
-  p{font-size: 17px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgba(64, 64, 64, 0.619);}
+  background: rgb(205, 111, 231);
+  background: linear-gradient(39deg, rgba(205, 111, 231, 1) 24%, rgba(194, 91, 222, 1) 52%, rgba(205, 111, 231, 1) 83%);
+
+  p {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(64, 64, 64, 0.619);
+  }
 }
-.div__container--carrousel{
+
+.div__container--carrousel {
   height: 55vh;
-background-image: url("../imagenes/prueba3.jpg");
-background-position: center ;
-background-size: cover;
-box-shadow: -2px 6px 60px -7px rgba(0,0,0,0.42);
+  background-image: url("../imagenes/prueba3.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: -2px 6px 60px -7px rgba(0, 0, 0, 0.42);
 
 
 }
+
 .div__container--brand {
   backdrop-filter: blur(10px);
   background: #222222a7;
-  img{
-    width: 23% ;
+
+  img {
+    width: 23%;
     height: 10vh;
   }
+
   p,
   i {
     color: white;
   }
 }
-

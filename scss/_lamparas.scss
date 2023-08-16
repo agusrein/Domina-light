@@ -37,7 +37,10 @@ div span i {
 }
 
 .div__container--card {
+  transition: all (0.4s);
+
   &:hover {
+    transform: translate((0px, -4px));
     border: 3px solid $orange;
     cursor: pointer;
     box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);

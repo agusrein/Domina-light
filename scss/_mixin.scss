@@ -1,16 +1,15 @@
 @import"variables";
 
-@mixin button{
+@mixin button {
     transition: all 0.5s;
 }
 
-@mixin button-transform{
-    transform: scale(1.03,1.02);
+@mixin button-transform {
+    transform: scale(1.03, 1.02);
 }
 
-@mixin anclas{
+@mixin anclas {
     text-decoration: none;
     cursor: pointer;
+
 }
-
-

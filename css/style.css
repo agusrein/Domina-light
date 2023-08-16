@@ -36,7 +36,11 @@ div span i {
   border: 2px solid rgb(116, 57, 154);
 }
 
+.div__container--card {
+  transition: all 0.4s;
+}
 .div__container--card:hover {
+  transform: translate(0px, -4px);
   border: 3px solid #eda756;
   cursor: pointer;
   box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
@@ -48,12 +52,15 @@ div span i {
 }
 
 .section__container--style h3 {
+  animation-duration: 1.3s;
   background-color: #eda756;
   color: rgb(59, 59, 59);
   font-family: "Open Sans", sans-serif;
 }
 
 .div__container--text-us {
+  animation: slideInLeft;
+  animation-duration: 1.5s;
   height: 40vh;
   background-color: #52c16a;
   border: 4px solid rgba(34, 34, 34, 0.1333333333);
@@ -69,6 +76,11 @@ div span i {
   font-weight: 600;
   color: rgb(66, 65, 65);
   text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+}
+
+.div__container--all-contact {
+  animation: fadeInUp;
+  animation-duration: 1.7s;
 }
 
 .div__container--form {
@@ -196,6 +208,8 @@ div span i {
   }
 }
 .div__container--form-price {
+  animation: fadeInUp;
+  animation-duration: 1.5s;
   position: relative;
   z-index: 1;
   color: white;
@@ -345,6 +359,9 @@ a {
   backdrop-filter: blur(10px);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
+.nav a {
+  font-size: 17px;
+}
 .nav button {
   border: none;
 }
@@ -404,15 +421,14 @@ li {
 .div__container--about {
   background: rgb(137, 45, 167);
   background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039216) 0%, rgba(42, 188, 91, 0.9417016807) 52%, rgb(253, 146, 45) 81%);
-}
-.div__container--about h2,
-.div__container--about p,
-.div__container--about a {
   color: white;
 }
-.div__container--about h2 a:hover,
-.div__container--about p a:hover,
-.div__container--about a a:hover {
+.div__container--about p,
+.div__container--about a {
+  font-size: 18px;
+  color: white;
+}
+.div__container--about a:hover {
   font-weight: 600;
 }
 
@@ -459,7 +475,8 @@ li {
 .div__container--faq ul {
   background-color: rgba(63, 63, 63, 0.929);
 }
-.div__container--faq ul p, .div__container--faq ul a {
+.div__container--faq ul p,
+.div__container--faq ul a {
   color: white;
 }
 
