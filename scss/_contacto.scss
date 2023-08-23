@@ -3,7 +3,7 @@
 .div__container--text-us {
     animation: slideInLeft;
     animation-duration: 1.5s;
-    height: 40vh;
+    height: 300px;
     background-color: $greenPseudoclass;
     border: 4px solid $borderTransparent;
     border-left: none;
@@ -25,134 +25,136 @@
 .div__container--all-contact {
     animation: fadeInUp;
     animation-duration: 1.7s;
-}
 
-.div__container--form {
-    transform: translate(0px, -115px);
-    backdrop-filter: blur(10px);
-    background: $backgroundGlassDark;
-    border: 4px solid $borderTransparent;
-    border-right: 2px solid $borderTransparent;
-    height: 100vh;
-    color: white;
 
-    h2,
-    h5 {
-        text-shadow: $text-shadow;
-    }
+    .div__container--form {
+        transform: translate(0px, -115px);
+        backdrop-filter: blur(10px);
+        background: $backgroundGlassDark;
+        border: 4px solid $borderTransparent;
+        border-right: 2px solid $borderTransparent;
+        height: 800px;
+        color: white;
 
-    textarea {
-        background-color: $inputBackground;
-        outline: none;
-        font-size: 15px;
-        height: 20vh;
-        overflow: hidden;
-        resize: none;
-        transition: all 0.5s;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.02, 1)
+        h2,
+        h5 {
+            text-shadow: $text-shadow;
         }
 
-        &:focus {
-            border: 2px solid $greenPseudoclass;
-        }
-    }
-
-    input {
-        background-color: $inputBackground;
-        outline: none;
-        height: 5vh;
-        border: $borderTransparent;
-        transition: all 0.5s;
-        cursor: pointer;
-
-        &::placeholder {
+        textarea {
+            background-color: $inputBackground;
+            outline: none;
             font-size: 15px;
+            height: 200px;
+            overflow: hidden;
+            resize: none;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02, 1)
+            }
+
+            &:focus {
+                border: 2px solid $greenPseudoclass;
+            }
         }
 
-        &[type=number]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
+        input {
+            background-color: $inputBackground;
+            outline: none;
+            height: 40px;
+            border: $borderTransparent;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &::placeholder {
+                font-size: 15px;
+            }
+
+            &[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            &:hover {
+                transform: scale(1.02, 1)
+            }
+
+            &:focus {
+                border: 2px solid $greenPseudoclass;
+            }
         }
 
-        &:hover {
-            transform: scale(1.02, 1)
+        select {
+            outline: none;
+            background-color: $inputBackground;
+            font-size: 15px;
+            height: 40px;
+            color: grey;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02, 1)
+            }
+
+            &:focus {
+                border: 2px solid $greenPseudoclass;
+                background-color: rgb(235, 239, 239);
+            }
+
+
         }
 
-        &:focus {
-            border: 2px solid $greenPseudoclass;
+        button {
+            @include button;
+            height: 40px;
+            border: $borderTransparent;
+            background-color: $greenPseudoclass;
+
+            &:hover {
+                @include button-transform;
+                background-color: $violet;
+
+            }
+
+            &:active {
+                background-color: $violetPseudoclass;
+            }
         }
+
+
     }
 
-    select {
-        outline: none;
-        background-color: $inputBackground;
-        font-size: 15px;
-        height: 5vh;
-        color: grey;
-        transition: all 0.5s;
-        cursor: pointer;
+    .div__container--contact-information {
+        transform: translate(0px, -115px);
+        backdrop-filter: blur(10px);
+        background: $backgroundGlassDark;
+        border: 4px solid $borderTransparent;
+        border-left: 2px solid $borderTransparent;
+        height: 800px;
+        color: white;
 
-        &:hover {
-            transform: scale(1.02, 1)
+        i {
+            color: $greenPseudoclass;
         }
 
-        &:focus {
-            border: 2px solid $greenPseudoclass;
-            background-color: rgb(235, 239, 239);
+        h2,
+        p {
+            color: white;
+            text-shadow: $text-shadow;
         }
 
-
-    }
-
-    button {
-        @include button;
-        height: 5vh;
-        border: $borderTransparent;
-        background-color: $greenPseudoclass;
-
-        &:hover {
-            @include button-transform;
-            background-color: $violet;
-
+        iframe {
+            transition: all 0.5s;
         }
 
-        &:active {
-            background-color: $violetPseudoclass;
+        iframe:hover {
+            transform: scale(1.04, 1);
         }
+
     }
-
-
-}
-
-.div__container--contact-information {
-    transform: translate(0px, -115px);
-    backdrop-filter: blur(10px);
-    background: $backgroundGlassDark;
-    border: 4px solid $borderTransparent;
-    border-left: 2px solid $borderTransparent;
-    height: 100vh;
-    color: white;
-
-    i {
-        color: $greenPseudoclass;
-    }
-
-    h2,
-    p {
-        text-shadow: $text-shadow;
-    }
-
-    iframe {
-        transition: all 0.5s;
-    }
-
-    iframe:hover {
-        transform: scale(1.04, 1);
-    }
-
 }
 
 @media screen and (min-width:300px) and (max-width:767px) {
@@ -160,7 +162,7 @@
         transform: translate(0px, -60px);
         border: 4px solid $borderTransparent;
         border-radius: 5px;
-        height: 100vh;
+        height: 280px;
     }
 
     .div__container--contact-information {
@@ -168,12 +170,10 @@
         border: 4px solid $borderTransparent;
         border-radius: 5px;
         margin-top: 45px;
-        height: 65vh;
-
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1260px) {
+@media screen and (min-width:768px) {
 
     .div__container--contact-information,
     .div__container--form {

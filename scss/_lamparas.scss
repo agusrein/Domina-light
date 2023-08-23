@@ -1,17 +1,5 @@
 @import"variables";
 
-@media screen and (max-width: 992px) and (min-width: 300px) {
-  .div__container--modifier {
-    height: 20vh;
-  }
-}
-
-@media screen and (max-width: 1800px) and (min-width: 990px) {
-  .div__container--modifier {
-    height: 15vh
-  }
-}
-
 div span i {
   color: rgb(93, 93, 93);
   text-shadow: -5px -5px 5px #4e4d4d;
@@ -44,6 +32,12 @@ div span i {
     border: 3px solid $orange;
     cursor: pointer;
     box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
+
+    p {
+      font-weight: 600;
+      color: #4e4d4d;
+      font-size: 15px;
+    }
   }
 
   &:active {

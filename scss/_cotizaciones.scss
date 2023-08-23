@@ -4,7 +4,7 @@
 
 .div__container--form-price {
     animation: fadeInUp;
-    animation-duration: 1.5s;
+    animation-duration: 1.7s;
     position: relative;
     z-index: 1;
     color: white;
@@ -12,7 +12,7 @@
     background: $backgroundGlassDark;
     backdrop-filter: blur(10px);
     margin-left: 10%;
-    height: 100vh;
+    height: 800px;
 
     h2,
     h5 {
@@ -22,7 +22,7 @@
     input {
         background-color: $inputBackground;
         outline: none;
-        height: 5vh;
+        height: 40px;
         border: $borderTransparent;
         transition: all 0.5s;
         cursor: pointer;
@@ -49,7 +49,7 @@
         outline: none;
         background-color: $inputBackground;
         font-size: 15px;
-        height: 5vh;
+        height: 40px;
         color: grey;
         transition: all 0.5s;
         cursor: pointer;
@@ -68,7 +68,7 @@
 
     button {
         @include button;
-        height: 5vh;
+        height: 40px;
         border: $borderTransparent;
         background-color: $greenPseudoclass;
 
@@ -83,21 +83,29 @@
     }
 }
 
-.div__container--sales-area {
-    border: 4px solid $borderTransparent;
-    background-color: $greenPseudoclass;
-    border-top-left-radius: 110px;
-    border-bottom-right-radius: 110px;
-    transform: translate(0px, -200px);
-    color: rgb(66, 65, 65);
+.div__container--animation {
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
 
-    p {
-        text-shadow: $text-shadow;
-    }
+    .div__container--sales-area {
+        border: 4px solid $borderTransparent;
+        background-color: $greenPseudoclass;
+        border-top-left-radius: 110px;
+        border-bottom-right-radius: 110px;
+        transition: translate 1.5s;
+        transform: translate(0px, -200px);
+        color: rgb(66, 65, 65);
 
-    .div__dividier {
-        border-bottom: 3px solid $borderTransparent;
-        border-radius: 1rem;
+
+        p {
+            text-shadow: $text-shadow;
+            font-size: 17px;
+        }
+
+        .div__dividier {
+            border-bottom: 3px solid $borderTransparent;
+            border-radius: 1rem;
+        }
     }
 }
 
@@ -107,11 +115,11 @@
         margin: 0;
     }
 
-    .div__container--sales-area {
-        transform: translate(0px, 0px);
-        margin-top: 3%;
-
+    .div__container--animation {
+        .div__container--sales-area {
+            transform: translate(0px, 0px);
+            margin-top: 3%;
+        }
     }
-
 
 }

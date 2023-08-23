@@ -1,10 +1,19 @@
 @import"variables";
 
 .section__container--style {
-    h3 {
-        animation-duration: 1.3s;
-        background-color: #eda756;
-        color: rgb(59, 59, 59);
-        font-family: 'Open Sans', sans-serif;
+    .div__container--title {
+        overflow: hidden;
+        height: 17vh;
+
+        h3 {
+            height: 50px;
+            background-color: #eda756;
+            color: rgb(59, 59, 59);
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    p {
+        font-size: 18px;
     }
 }

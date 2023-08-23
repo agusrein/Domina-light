@@ -5,16 +5,6 @@
   padding: 0px;
 }
 
-@media screen and (max-width: 992px) and (min-width: 300px) {
-  .div__container--modifier {
-    height: 20vh;
-  }
-}
-@media screen and (max-width: 1800px) and (min-width: 990px) {
-  .div__container--modifier {
-    height: 15vh;
-  }
-}
 div span i {
   color: rgb(93, 93, 93);
   text-shadow: -5px -5px 5px #4e4d4d;
@@ -45,23 +35,35 @@ div span i {
   cursor: pointer;
   box-shadow: 5px 0px 10px rgba(56, 56, 56, 0.805);
 }
+.div__container--card:hover p {
+  font-weight: 600;
+  color: #4e4d4d;
+  font-size: 15px;
+}
 .div__container--card:active {
   border: 3px solid rgb(231, 150, 58);
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.805);
 }
 
-.section__container--style h3 {
-  animation-duration: 1.3s;
+.section__container--style .div__container--title {
+  overflow: hidden;
+  height: 17vh;
+}
+.section__container--style .div__container--title h3 {
+  height: 50px;
   background-color: #eda756;
   color: rgb(59, 59, 59);
   font-family: "Open Sans", sans-serif;
+}
+.section__container--style p {
+  font-size: 18px;
 }
 
 .div__container--text-us {
   animation: slideInLeft;
   animation-duration: 1.5s;
-  height: 40vh;
+  height: 300px;
   background-color: #52c16a;
   border: 4px solid rgba(34, 34, 34, 0.1333333333);
   border-left: none;
@@ -82,107 +84,106 @@ div span i {
   animation: fadeInUp;
   animation-duration: 1.7s;
 }
-
-.div__container--form {
+.div__container--all-contact .div__container--form {
   transform: translate(0px, -115px);
   backdrop-filter: blur(10px);
   background: rgba(34, 34, 34, 0.6549019608);
   border: 4px solid rgba(34, 34, 34, 0.1333333333);
   border-right: 2px solid rgba(34, 34, 34, 0.1333333333);
-  height: 100vh;
+  height: 800px;
   color: white;
 }
-.div__container--form h2,
-.div__container--form h5 {
+.div__container--all-contact .div__container--form h2,
+.div__container--all-contact .div__container--form h5 {
   text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
 }
-.div__container--form textarea {
+.div__container--all-contact .div__container--form textarea {
   background-color: rgba(254, 255, 255, 0.86);
   outline: none;
   font-size: 15px;
-  height: 20vh;
+  height: 200px;
   overflow: hidden;
   resize: none;
   transition: all 0.5s;
   cursor: pointer;
 }
-.div__container--form textarea:hover {
+.div__container--all-contact .div__container--form textarea:hover {
   transform: scale(1.02, 1);
 }
-.div__container--form textarea:focus {
+.div__container--all-contact .div__container--form textarea:focus {
   border: 2px solid #52c16a;
 }
-.div__container--form input {
+.div__container--all-contact .div__container--form input {
   background-color: rgba(254, 255, 255, 0.86);
   outline: none;
-  height: 5vh;
+  height: 40px;
   border: rgba(34, 34, 34, 0.1333333333);
   transition: all 0.5s;
   cursor: pointer;
 }
-.div__container--form input::placeholder {
+.div__container--all-contact .div__container--form input::placeholder {
   font-size: 15px;
 }
-.div__container--form input[type=number]::-webkit-inner-spin-button {
+.div__container--all-contact .div__container--form input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.div__container--form input:hover {
+.div__container--all-contact .div__container--form input:hover {
   transform: scale(1.02, 1);
 }
-.div__container--form input:focus {
+.div__container--all-contact .div__container--form input:focus {
   border: 2px solid #52c16a;
 }
-.div__container--form select {
+.div__container--all-contact .div__container--form select {
   outline: none;
   background-color: rgba(254, 255, 255, 0.86);
   font-size: 15px;
-  height: 5vh;
+  height: 40px;
   color: grey;
   transition: all 0.5s;
   cursor: pointer;
 }
-.div__container--form select:hover {
+.div__container--all-contact .div__container--form select:hover {
   transform: scale(1.02, 1);
 }
-.div__container--form select:focus {
+.div__container--all-contact .div__container--form select:focus {
   border: 2px solid #52c16a;
   background-color: rgb(235, 239, 239);
 }
-.div__container--form button {
+.div__container--all-contact .div__container--form button {
   transition: all 0.5s;
-  height: 5vh;
+  height: 40px;
   border: rgba(34, 34, 34, 0.1333333333);
   background-color: #52c16a;
 }
-.div__container--form button:hover {
+.div__container--all-contact .div__container--form button:hover {
   transform: scale(1.03, 1.02);
   background-color: rgba(220, 117, 248, 0.9725490196);
 }
-.div__container--form button:active {
+.div__container--all-contact .div__container--form button:active {
   background-color: rgba(189, 99, 214, 0.9725490196);
 }
-
-.div__container--contact-information {
+.div__container--all-contact .div__container--contact-information {
   transform: translate(0px, -115px);
   backdrop-filter: blur(10px);
   background: rgba(34, 34, 34, 0.6549019608);
   border: 4px solid rgba(34, 34, 34, 0.1333333333);
   border-left: 2px solid rgba(34, 34, 34, 0.1333333333);
-  height: 100vh;
+  height: 800px;
   color: white;
 }
-.div__container--contact-information i {
+.div__container--all-contact .div__container--contact-information i {
   color: #52c16a;
 }
-.div__container--contact-information h2,
-.div__container--contact-information p {
+.div__container--all-contact .div__container--contact-information h2,
+.div__container--all-contact .div__container--contact-information p {
+  color: white;
   text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
 }
-.div__container--contact-information iframe {
+.div__container--all-contact .div__container--contact-information iframe {
   transition: all 0.5s;
 }
-.div__container--contact-information iframe:hover {
+.div__container--all-contact .div__container--contact-information iframe:hover {
   transform: scale(1.04, 1);
 }
 
@@ -191,17 +192,16 @@ div span i {
     transform: translate(0px, -60px);
     border: 4px solid rgba(34, 34, 34, 0.1333333333);
     border-radius: 5px;
-    height: 100vh;
+    height: 280px;
   }
   .div__container--contact-information {
     transform: translate(0px, -60px);
     border: 4px solid rgba(34, 34, 34, 0.1333333333);
     border-radius: 5px;
     margin-top: 45px;
-    height: 65vh;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1260px) {
+@media screen and (min-width: 768px) {
   .div__container--contact-information,
   .div__container--form {
     transform: translate(0px, -100px);
@@ -209,7 +209,7 @@ div span i {
 }
 .div__container--form-price {
   animation: fadeInUp;
-  animation-duration: 1.5s;
+  animation-duration: 1.7s;
   position: relative;
   z-index: 1;
   color: white;
@@ -217,7 +217,7 @@ div span i {
   background: rgba(34, 34, 34, 0.6549019608);
   backdrop-filter: blur(10px);
   margin-left: 10%;
-  height: 100vh;
+  height: 800px;
 }
 .div__container--form-price h2,
 .div__container--form-price h5 {
@@ -226,7 +226,7 @@ div span i {
 .div__container--form-price input {
   background-color: rgba(254, 255, 255, 0.86);
   outline: none;
-  height: 5vh;
+  height: 40px;
   border: rgba(34, 34, 34, 0.1333333333);
   transition: all 0.5s;
   cursor: pointer;
@@ -248,7 +248,7 @@ div span i {
   outline: none;
   background-color: rgba(254, 255, 255, 0.86);
   font-size: 15px;
-  height: 5vh;
+  height: 40px;
   color: grey;
   transition: all 0.5s;
   cursor: pointer;
@@ -262,7 +262,7 @@ div span i {
 }
 .div__container--form-price button {
   transition: all 0.5s;
-  height: 5vh;
+  height: 40px;
   border: rgba(34, 34, 34, 0.1333333333);
   background-color: #52c16a;
 }
@@ -274,18 +274,24 @@ div span i {
   background-color: rgba(189, 99, 214, 0.9725490196);
 }
 
-.div__container--sales-area {
+.div__container--animation {
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+.div__container--animation .div__container--sales-area {
   border: 4px solid rgba(34, 34, 34, 0.1333333333);
   background-color: #52c16a;
   border-top-left-radius: 110px;
   border-bottom-right-radius: 110px;
+  transition: translate 1.5s;
   transform: translate(0px, -200px);
   color: rgb(66, 65, 65);
 }
-.div__container--sales-area p {
+.div__container--animation .div__container--sales-area p {
   text-shadow: 0px 12px 20px rgba(24, 24, 24, 0.921);
+  font-size: 17px;
 }
-.div__container--sales-area .div__dividier {
+.div__container--animation .div__container--sales-area .div__dividier {
   border-bottom: 3px solid rgba(34, 34, 34, 0.1333333333);
   border-radius: 1rem;
 }
@@ -294,7 +300,7 @@ div span i {
   .div__container--form-price {
     margin: 0;
   }
-  .div__container--sales-area {
+  .div__container--animation .div__container--sales-area {
     transform: translate(0px, 0px);
     margin-top: 3%;
   }
@@ -304,8 +310,13 @@ html {
 }
 
 a {
+  color: #222;
   text-decoration: none;
   cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
 
 .div__container--img {
@@ -341,6 +352,11 @@ a {
 .div__container--img button:active {
   background-color: rgba(189, 99, 214, 0.9725490196);
 }
+@media screen and (min-width: 1500px) and (max-width: 2100px) {
+  .div__container--img h1 {
+    font-size: 50px;
+  }
+}
 @media screen and (min-width: 715px) and (max-width: 992px) {
   .div__container--img h1 {
     margin-top: 15%;
@@ -348,7 +364,11 @@ a {
 }
 @media screen and (min-width: 300px) and (max-width: 715px) {
   .div__container--img h1 {
+    font-size: 48px;
     margin-top: 25%;
+  }
+  .div__container--img h4 {
+    text-align: center;
   }
 }
 
@@ -359,8 +379,14 @@ a {
   backdrop-filter: blur(10px);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
+.nav .ul__dropdown {
+  background: rgb(216, 214, 214);
+  border: 1px solid rgb(165, 164, 164);
+  width: 30%;
+}
 .nav a {
   font-size: 17px;
+  transition: all 0.2s;
 }
 .nav button {
   border: none;
@@ -385,37 +411,17 @@ a {
   }
 }
 
-.ul__dropdown {
-  background: rgb(216, 214, 214);
-  border: 1px solid rgb(165, 164, 164);
-  width: 30%;
+@media screen and (max-width: 2500px) and (min-width: 300px) {
+  .div__container--modifier {
+    height: 110px;
+  }
 }
 
-a {
-  color: #222;
+.div__container--branches a {
+  transition: all 0.2s;
 }
-
-footer {
-  background: rgb(45, 45, 46);
-  background: radial-gradient(circle, rgb(45, 45, 46) 51%, rgb(64, 64, 65) 66%, rgb(96, 96, 103) 82%, rgb(146, 146, 154) 100%);
-}
-footer .hr__dividier {
-  border: 1px solid rgb(211, 209, 209);
-}
-footer h6 {
-  color: white;
-  font-size: 13px;
-}
-footer img {
-  width: 100px;
-}
-footer i {
-  margin: 10px;
-  font-size: 27px;
-}
-
-li {
-  list-style: none;
+.div__container--branches a:hover {
+  transform: scale(1.03, 1);
 }
 
 .div__container--about {
@@ -423,13 +429,18 @@ li {
   background: linear-gradient(16deg, rgba(137, 45, 167, 0.9473039216) 0%, rgba(42, 188, 91, 0.9417016807) 52%, rgb(253, 146, 45) 81%);
   color: white;
 }
-.div__container--about p,
-.div__container--about a {
+.div__container--about p {
   font-size: 18px;
   color: white;
 }
-.div__container--about a:hover {
+.div__container--about a {
   font-weight: 600;
+  color: white;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+.div__container--about a:hover {
+  font-size: 18px;
 }
 
 .div__container--info button {
@@ -474,15 +485,20 @@ li {
 }
 .div__container--faq ul {
   background-color: rgba(63, 63, 63, 0.929);
-}
-.div__container--faq ul p,
-.div__container--faq ul a {
   color: white;
+}
+.div__container--faq ul a {
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s;
+}
+.div__container--faq ul a:hover {
+  font-size: 17px;
 }
 
 .div__container--offer {
   background: rgb(205, 111, 231);
-  background: linear-gradient(39deg, rgb(205, 111, 231) 24%, rgb(194, 91, 222) 52%, rgb(205, 111, 231) 83%);
+  background: linear-gradient(39deg, rgb(195, 106, 220) 24%, rgb(206, 104, 235) 52%, rgb(189, 103, 213) 83%);
 }
 .div__container--offer p {
   font-size: 17px;
@@ -497,18 +513,55 @@ li {
   background-size: cover;
   box-shadow: -2px 6px 60px -7px rgba(0, 0, 0, 0.42);
 }
-
-.div__container--brand {
+.div__container--carrousel span {
+  background-color: rgba(220, 117, 248, 0.9725490196);
+  border-radius: 5px;
+}
+.div__container--carrousel button {
+  transition: all 0.2s;
+}
+.div__container--carrousel button:hover {
+  transform: scale(1.2, 1.2);
+}
+.div__container--carrousel .div__container--brand {
   backdrop-filter: blur(10px);
   background: rgba(34, 34, 34, 0.6549019608);
 }
-.div__container--brand img {
+.div__container--carrousel .div__container--brand img {
   width: 23%;
   height: 10vh;
 }
-.div__container--brand p,
-.div__container--brand i {
+.div__container--carrousel .div__container--brand i {
+  color: rgb(155, 154, 154);
+  font-size: 20px;
+}
+.div__container--carrousel .div__container--brand p {
   color: white;
+}
+
+footer {
+  background: rgb(45, 45, 46);
+  background: radial-gradient(circle, rgb(45, 45, 46) 51%, rgb(64, 64, 65) 66%, rgb(96, 96, 103) 82%, rgb(146, 146, 154) 100%);
+}
+footer .hr__dividier {
+  border: 1px solid rgb(211, 209, 209);
+}
+footer h6 {
+  color: white;
+  font-size: 13px;
+}
+footer img {
+  width: 100px;
+}
+footer i {
+  color: #e8e2e1;
+  margin: 10px;
+  font-size: 27px;
+  transition: 0.2s;
+}
+footer i:hover {
+  font-size: 30px;
+  color: #52c16a;
 }
 
 /*# sourceMappingURL=style.css.map */
