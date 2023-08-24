@@ -79,15 +79,15 @@
                     <form class="row col-10 justify-content-center" name="contact" method="POST" data-netlify="true">
                         <label class="mt-2 pb-1 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12"
                             for="namesurname">Nombre y Apellido</label>
-                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" type="text"
+                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" name="subjet" type="text"
                             id="namesurname" placeholder="Nombre y Apellido">
                         <label class="mt-2 pb-1 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12"
                             for="email">Email</label>
-                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" type="email"
+                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" name="email" type="email"
                             id="email" placeholder="Ingrese su correo electrónico">
                         <label class="mt-2 pb-1 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12"
                             for="number">Numero de Teléfono</label>
-                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" type="number"
+                        <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg" name="phone" type="number"
                             id="number" placeholder="Teléfono o Celular">
                         <label class="mt-2 pb-1 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12"
                             for="motive">Motivo</label>
@@ -98,10 +98,10 @@
                             <option class="option" value="other">Consulta</option>
                         </select>
                         <textarea class="rounded-2 mt-4 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 shadow-lg"
-                            placeholder="Ingrese aquí su mensaje"></textarea>
+                            placeholder="Ingrese aquí su mensaje" name="message"></textarea>
                         <div class="col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 p-0 m-0">
                             <button class="text-uppercase col-4 mt-3 mb-5 rounded-2 shadow-lg"
-                                type="submit"><a>Enviar</a></button>
+                                type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>

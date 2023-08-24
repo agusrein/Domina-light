@@ -66,28 +66,28 @@
                 class="animate__animated animate__fadeInUp mt-5 col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 div__container--form-price rounded shadow-lg">
                 <h2 class="pt-3 text-center">Cotizaciones</h2>
                 <h5 class="pb-3 text-center p-2 fs-6">¿Te ha interesado alguno de nuestros productos?</h5>
-                <form class="d-flex align-items-center flex-column ">
+                <form class="d-flex align-items-center flex-column" name="contactTwo" method="POST" data-netlify="true">
                     <label class="mt-3 pb-1 ps-2 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11"
                         for="nomyapdo">Nombre y Apellido</label>
-                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" type="text"
+                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" name="subjet" type="text"
                         id="nomyapdo" placeholder="Nombre y Apellido">
                     <label class="mt-3 pb-1 ps-2 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11"
                         for="correo">Email</label>
-                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" type="email"
+                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" name="email" type="email"
                         id="correo" placeholder="Ingrese su correo electrónico">
                     <label class="mt-3 pb-1 ps-2 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11"
                         for="numero">Numero de Teléfono</label>
-                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" type="number"
+                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" name="phone" type="number"
                         id="numero" placeholder="Teléfono o Celular">
                     <label class="mt-3 pb-1 ps-2 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11"
                         for="cantidad">Cantidad</label>
-                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" type="number"
+                    <input class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2" name="howmany" type="number"
                         id="cantidad" placeholder="Cantidad de productos">
                     <label class="mt-3 pb-1 ps-2 fw-semibold col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11"
                         for="codigo">Codigo de producto</label>
                     <select class="rounded-2 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 shadow-lg ps-2"
-                        name="codigo">
-                        <option value="motivo">Seleccione una opción</option>
+                        name="code">
+                        <option value="none">Seleccione una opción</option>
                         <option value="codProv">001-Kalmar</option>
                         <option value="codProv">010-6w Globo Humo</option>
                         <option value="codProv">100-Bohemia</option>
@@ -106,10 +106,8 @@
                         <option value="codProv">006-Colgante Oaki 4L Madera</option>
                     </select>
                     <div class="mb-5 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-11 m-0 p-0">
-                        <button class=" mt-3 col-3 rounded-2 shadow-lg text-uppercase"><a
-                                href="../html/cotizaciones.html">Eliminar</a></button>
-                        <button class="ms-3 mt-3 col-3 rounded-2 shadow-lg text-uppercase"><a
-                                href="../html/cotizaciones.html">Enviar</a></button>
+                        <button class=" mt-3 col-3 rounded-2 shadow-lg text-uppercase" type="reset">Eliminar</button>
+                        <button class="ms-3 mt-3 col-3 rounded-2 shadow-lg text-uppercase" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
